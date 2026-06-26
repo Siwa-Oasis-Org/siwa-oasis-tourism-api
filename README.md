@@ -5,7 +5,7 @@
 </div>
 
 <div align="center">
-  ![Node.js](https://img.shields.io/badge/Node.js-v18-green?logo=nodedotjs&style=for-the-badge) ![Express.js](https://img.shields.io/badge/Express.js-v4-black?logo=express&style=for-the-badge) ![MySQL](https://img.shields.io/badge/MySQL-v8-blue?logo=mysql&style=for-the-badge) ![Sequelize](https://img.shields.io/badge/Sequelize-ORM-blue?logo=sequelize&style=for-the-badge) ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+  <img src="https://img.shields.io/badge/Node.js-v18-green?logo=nodedotjs&style=for-the-badge" alt="Node.js" /> <img src="https://img.shields.io/badge/Express.js-v4-black?logo=express&style=for-the-badge" alt="Express.js" /> <img src="https://img.shields.io/badge/MySQL-v8-blue?logo=mysql&style=for-the-badge" alt="MySQL" /> <img src="https://img.shields.io/badge/Sequelize-ORM-blue?logo=sequelize&style=for-the-badge" alt="Sequelize" /> <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
 </div>
 
 خادم **سيوة البرمجي** هو محرك سحابي مبني باستخدام Node.js و Express.js لتنظيم معاملات الحجز ومصادقة المستخدمين وتتبع سجل الرسائل والمحادثات مع الذكاء الاصطناعي عبر قاعدة بيانات MySQL وباستخدام Sequelize ORM.
