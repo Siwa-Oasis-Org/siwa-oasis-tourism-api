@@ -1,11 +1,11 @@
 # 💻 Siwa Oasis Tourism API
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:0f172a&height=160&section=header&text=Siwa%20Oasis%20Tourism%20API&fontSize=42&fontColor=38bdf8&fontFamily=Outfit" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:059669&height=160&section=header&text=Siwa%20Tourism%20API&fontSize=42&fontColor=ffffff&fontFamily=Outfit" width="100%" />
 </div>
 
 <div align="center">
-  ![Node.js](https://img.shields.io/badge/Node.js-v18-green?logo=nodedotjs&style=for-the-badge) ![Express.js](https://img.shields.io/badge/Express.js-v4-black?logo=express&style=for-the-badge) ![MySQL](https://img.shields.io/badge/MySQL-v8-blue?logo=mysql&style=for-the-badge) ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+  ![Node.js](https://img.shields.io/badge/Node.js-v18-green?logo=nodedotjs&style=for-the-badge) ![Express.js](https://img.shields.io/badge/Express.js-v4-black?logo=express&style=for-the-badge) ![MySQL](https://img.shields.io/badge/MySQL-v8-blue?logo=mysql&style=for-the-badge) ![Sequelize](https://img.shields.io/badge/Sequelize-ORM-blue?logo=sequelize&style=for-the-badge) ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 </div>
 
 ---
@@ -13,20 +13,20 @@
 ## 📌 Project Overview (Description)
 Enterprise-grade Express.js backend API powered by Sequelize and MySQL, handling booking logic, destination catalogs, and secure chatbot telemetry.
 
-This codebase represents professional software development practices, clean module organization, and efficient code architectures tailored for high responsiveness and scalability.
+This codebase represents professional software development practices, Sequelize ORM database management, and robust Express routes.
 
 ---
 
 ## ⚡ The Engineering Challenge
 
 ### 🔴 Problem
-Developers building web solutions face difficulties handling state synchronization, styling inconsistencies, and complex configurations that clutter logic and trigger UI slowdowns or connection lifecycle failures.
+Handling database persistence, mapping data schemas dynamically using Object-Relational Mappings (ORM) to relational databases, and validating user routes.
 
 ### 🟢 Solution
 This project implements:
-* **Separation of Concerns**: Structured module layouts separating design assets from operational logic.
-* **Optimized Rendering**: Efficient script logic and CSS layout variables to maintain lightweight UI paint times.
-* **Structured Coding Standards**: Written using clean semantic patterns ensuring readable code maintainability.
+* **Sequelize Model Mappings**: Structured Sequelize database maps linking users, bookings, and chats.
+* **Express Routing Framework**: Divided API sub-routers cleanly parsing incoming JSON data.
+* **JWT Access Protections**: Custom authorization checkers verifying user request tokens.
 
 ---
 
@@ -34,9 +34,13 @@ This project implements:
 The internal layout structures are separated logically:
 ```text
 siwa-oasis-tourism-api/
-├── css/ or styles/      # Styling engines and layouts
-├── js/ or src/          # Source scripts and business logic
-├── index.html or app.js # Operational entry point
+├── src/
+│   ├── config/          # Sequelize configuration and database connect
+│   ├── controllers/     # Controller logic implementations
+│   ├── models/          # Sequelize database tables mapping
+│   ├── routes/          # Express route bindings
+│   └── app.js           # Server application startup setup
+├── package.json         # Node.js dependencies configuration
 └── README.md            # System documentation
 ```
 
@@ -46,32 +50,32 @@ siwa-oasis-tourism-api/
 
 | Technology | Purpose |
 | :--- | :--- |
-| Node.js | Server-side JavaScript runtime |
-| Express | RESTful API server framework |
-| MySQL | Relational database storage |
-| Sequelize | Object-Relational Mapping (ORM) for SQL |
+| Node.js | Javascript backend runtime environment |
+| Express.js | API routing framework |
+| MySQL | Relational database |
+| Sequelize | Database ORM mapper |
 
 ---
 
 ## 🚀 Local Developer Setup & Run
 
 ### 📋 Prerequisites
-* Modern web browser / Node.js runtime (depending on project stack)
+* Node.js v18+ and MySQL running instance
 
 ### ⚙️ Quick Start Steps
 ```bash
-    git clone https://github.com/Siwa-Oasis-Org/siwa-oasis-tourism-api.git
-    cd siwa-oasis-tourism-api
-    npm install
-    npm run dev
+git clone https://github.com/Siwa-Oasis-Org/siwa-oasis-tourism-api.git
+cd siwa-oasis-tourism-api
+npm install
+# Set database connections in configurations
+npm run dev
 ```
 
 ---
 
 ## 🔮 Future Improvements
-* [ ] Integrate automated unit testing.
-* [ ] Add dynamic dark/light theme switcher.
-* [ ] Improve responsiveness on extra-small mobile screen viewports.
+* [ ] Add unit testing suites (Jest / Supertest).
+* [ ] Integrate Redis database for caching bookings.
 
 ---
 
